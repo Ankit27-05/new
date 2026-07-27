@@ -8,7 +8,7 @@ const API_KEY = 'SUPER_SECRET_API_KEY_SHOULD_NOT_BE_HARDCODED';
 
 app.get('/', (req, res) => {
   res.send('Hello world');
-});
+};
 
 // INTENTIONAL HIGH-RISK ISSUE #2: command injection / remote code execution
 // This endpoint unsafely executes arbitrary shell commands from a query parameter.
